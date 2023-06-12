@@ -201,9 +201,8 @@ print(state)
 
 #save wandb hyperparameters
 # wandb.config = state
-#wandb.init(project="OOD", entity="ood_learning", config=state)
 
-wandb.init(project="oodproject", entity="ooddetection", config=state)
+wandb.init(project="oodproject", entity="ood_learning", config=state)
 state['wandb_name'] = wandb.run.name
 
 # store train, test, and valid FPR95
@@ -250,9 +249,6 @@ rng = np.random.default_rng(args.seed)
 
 #make the data_loaders
 train_loader_in, train_loader_aux_in, train_loader_aux_in_cor, train_loader_aux_out, test_loader_in, test_loader_cor, test_loader_ood, valid_loader_in, valid_loader_aux = make_datasets(args.dataset, args.aux_out_dataset, args.test_out_dataset, state, args.alpha, args.pi_1, args.pi_2, args.cortype)
-
-
-
 
 
 print("\n len(train_loader_in.dataset) {} " \
