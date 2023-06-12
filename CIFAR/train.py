@@ -588,7 +588,7 @@ def train(epoch):
 
             losses.append(loss.item())
 
-        elif args.score == 'woods':
+        elif args.score == 'scone':
 
             #apply the sigmoid loss
             loss_energy_in =  torch.mean(torch.sigmoid(logistic_regression(
