@@ -13,11 +13,8 @@ This file plots results from a set of algorithm runs.
 '''
 
 #change these strings for plotting
-#results_root = 'results_ssnd_10'
-results_root = '/u/b/a/baihaoyue/private/ood_detection/woods_ood/CIFAR/results/'
-#figs_root = 'figs_ssnd_10'
-figs_root = '/u/b/a/baihaoyue/private/ood_detection/woods_ood/CIFAR/figs/'
-
+results_root = 'results_ssnd_10'
+figs_root = 'figs_ssnd_10'
 
 def test_fnr_using_valid_threshold(valid_scores_in, valid_scores_out, test_scores_in, test_scores_out, fpr_cutoff=0.05):
     valid_labels_in = np.zeros(len(valid_scores_in))
