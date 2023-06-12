@@ -12,7 +12,7 @@
 #  svhn, lsun_c, lsun_r,
 #  isun, dtd, places, FashionMNIST, tinyimages_300k
 
-learning_rate=0.0005
+learning_rate=0.0001
 batch_size=128
 ngpu=1
 prefetch=4
