@@ -293,7 +293,7 @@ net = WideResNet(args.layers, num_classes, args.widen_factor, dropRate=args.drop
 
 
 # create logistic regression layer for energy_vos and woods
-if args.score in ['energy_vos', 'woods']:
+if args.score in ['energy_vos', 'woods', 'scone']:
     logistic_regression = nn.Linear(1, 1)
     logistic_regression.cuda()
 
@@ -342,7 +342,7 @@ elif args.ngpu > 0:
 cudnn.benchmark = False  # control reproducibility/stochastic behavior
 
 #energy_vos, woods also use logistic regression in optimization
-if args.score in ['energy_vos', 'woods']:
+if args.score in ['energy_vos', 'woods', 'scone']:
     optimizer = torch.optim.SGD(
         list(net.parameters()) + list(logistic_regression.parameters()),
         state['learning_rate'], momentum=state['momentum'],
@@ -465,7 +465,7 @@ def train(epoch):
     global ce_constraint_weight
 
     # declare lam global
-    if args.score in ['woods_nn',  'woods']:
+    if args.score in ['woods_nn',  'woods', 'scone']:
         global lam
         global lam2
 
