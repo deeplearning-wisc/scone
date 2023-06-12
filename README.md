@@ -52,13 +52,12 @@ pi_1 is set to 0.5 and pi_2 is set to 0.1 as default. See the run.sh for more de
 
 Here are links for the less common outlier datasets used in the paper: [Textures](https://www.robots.ox.ac.uk/~vgg/data/dtd/),
 [Places365](http://places2.csail.mit.edu/download.html), [LSUN](https://www.dropbox.com/s/fhtsw1m3qxlwj6h/LSUN.tar.gz),
-[LSUN-R](https://www.dropbox.com/s/moqh2wh8696c3yl/LSUN_resize.tar.gz), [iSUN](https://www.dropbox.com/s/ssz7qxfqae0cca5/iSUN.tar.gz),
-and [300K Random Images](https://people.eecs.berkeley.edu/~hendrycks/300K_random_images.npy).
+[LSUN-R](https://www.dropbox.com/s/moqh2wh8696c3yl/LSUN_resize.tar.gz), and [iSUN](https://www.dropbox.com/s/ssz7qxfqae0cca5/iSUN.tar.gz).
 
 
 # Citation
 
-If you use our codebase, please cite our work:
+If you find our work useful, please consider citing our paper:
 
 ```
 @inproceedings{bai2023feed,
@@ -68,5 +67,4 @@ If you use our codebase, please cite our work:
       year = {2023}
 }
 ```
-
 
