@@ -23,6 +23,30 @@ Download the data in the folder
 ./data
 ```
 
+Corrupted CIFAR-10 dataset can be doenload via the link:
+```
+wget 
+```
+
+For iNaturalist, we have sampled 10,000 images from the selected concepts for each dataset,
+which can be download via the following link:
+```
+wget http://pages.cs.wisc.edu/~huangrui/imagenet_ood_dataset/iNaturalist.tar.gz
+```
+
+Here are links for the less common OOD datasets used in the paper: 
+[Textures](https://www.robots.ox.ac.uk/~vgg/data/dtd/),
+[Places365](http://places2.csail.mit.edu/download.html), 
+[LSUN](https://www.dropbox.com/s/fhtsw1m3qxlwj6h/LSUN.tar.gz),
+[LSUN-R](https://www.dropbox.com/s/moqh2wh8696c3yl/LSUN_resize.tar.gz),
+[iSUN](https://www.dropbox.com/s/ssz7qxfqae0cca5/iSUN.tar.gz).
+
+For example, run the following commands in the **root** directory to download **LSUN-C**:
+```
+cd data/LSUN
+wget https://www.dropbox.com/s/fhtsw1m3qxlwj6h/LSUN.tar.gz
+tar -xvzf LSUN.tar.gz
+```
 
 
 # Pretrained models
@@ -57,14 +81,6 @@ pi_1 is set to 0.5 and pi_2 is set to 0.1 as default. See the run.sh for more de
 * ```CIFAR/plot_results.py``` contains code for loading and analyzing experimental results.
 * ```CIFAR/test.py``` contains code for testing experimental results in OOD setting.
 
-
-
-
-# Datasets
-
-Here are links for the less common outlier datasets used in the paper: [Textures](https://www.robots.ox.ac.uk/~vgg/data/dtd/),
-[Places365](http://places2.csail.mit.edu/download.html), [LSUN](https://www.dropbox.com/s/fhtsw1m3qxlwj6h/LSUN.tar.gz),
-[LSUN-R](https://www.dropbox.com/s/moqh2wh8696c3yl/LSUN_resize.tar.gz), and [iSUN](https://www.dropbox.com/s/ssz7qxfqae0cca5/iSUN.tar.gz).
 
 
 # Citation
