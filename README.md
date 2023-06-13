@@ -9,7 +9,7 @@ Modern machine learning models deployed in the wild can encounter both covariate
 # Preliminaries
 
 This is tested under Ubuntu Linux 20.04 and Python 3.8 environment, and requries some packages to be installed:
-* [PyTorch](https://pytorch.org/)=1.8.1
+* [PyTorch](https://pytorch.org/)==1.8.1
 
 
 
