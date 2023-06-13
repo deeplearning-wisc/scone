@@ -39,7 +39,7 @@ tar -xvzf LSUN.tar.gz
 
 The corrupted CIFAR-10 dataset can be downloaded via the link:
 ```
-wget https://drive.google.com/file/d/1nTmoldso05qRNe5Q3uWcVVGbYWGxqfNR/view?usp=drive_link
+wget https://drive.google.com/drive/u/0/folders/1JcI8UMBpdMffzCe-dqrzXA9bSaEGItzo
 ```
 
 
