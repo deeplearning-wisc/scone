@@ -10,8 +10,10 @@ Modern machine learning models deployed in the wild can encounter both covariate
 
 This is tested under Ubuntu Linux 20.04 and Python 3.8 environment, and requries some packages to be installed:
 * [PyTorch](https://pytorch.org/)==1.8.1
+* [torchvision](https://pypi.org/project/torchvision/)==0.9.1
 * [numpy](http://www.numpy.org/)==1.20.3
 * [sklearn](https://scikit-learn.org/stable/)==0.24.2
+* [wandb](https://pypi.org/project/wandb/)
 
 # Dataset Preparation
 
@@ -75,6 +77,15 @@ If you find our work useful, please consider citing our paper:
       author={Haoyue Bai and Gregory Canal and Xuefeng Du and Jeongyeol Kwon and Robert D Nowak and Yixuan Li},
       booktitle = {International Conference on Machine Learning},
       year = {2023}
+}
+```
+Our codebase borrows from the following:
+```
+@inproceedings{katz2022training,
+  title={Training Ood Detectors in Their Natural Habitats},
+  author={Katz-Samuels, Julian and Nakhleh, Julia B and Nowak, Robert and Li, Yixuan},
+  booktitle={International Conference on Machine Learning},
+  year={2022}
 }
 ```
 
