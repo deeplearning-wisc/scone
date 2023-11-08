@@ -1,6 +1,6 @@
 # Feed Two Birds with One Scone: Exploiting Wild Data for Both Out-of-Distribution Generalization and Detection
 
-This is the source code for ICML 2023 paper of Feed Two Birds with One Scone: Exploiting Wild Data for Both Out-of-Distribution Generalization and Detection by Haoyue Bai, Gregory Canal, Xuefeng Du, Jeongyeol Kwon, Robert Nowak, and Yixuan Li. [paper](https://proceedings.mlr.press/v202/bai23a/bai23a.pdf)
+This is the source code for ICML 2023 paper of [Feed Two Birds with One Scone: Exploiting Wild Data for Both Out-of-Distribution Generalization and Detection](https://proceedings.mlr.press/v202/bai23a/bai23a.pdf) by Haoyue Bai, Gregory Canal, Xuefeng Du, Jeongyeol Kwon, Robert Nowak, and Yixuan Li.
 
 # Abstract
 
