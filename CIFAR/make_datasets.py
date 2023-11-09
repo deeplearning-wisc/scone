@@ -267,11 +267,11 @@ def load_in_mixCifar_data(in_dset, rng, alpha, cortype):
     train_len = int(alpha * len(train_data_in_orig_cifar))
     train_idx = idx[:train_len]
     
-    aux_idx = idx[int(0.5*len(train_data_in_orig_cifar)):]
+    aux_idx = idx[int((1-alpha)*len(train_data_in_orig_cifar)):]
 
     train_in_data = torch.utils.data.Subset(train_data_in_orig_cifar, train_idx)
 
-    aux_in_data = torch.utils.data.Subset(train_data_in_orig_cifar, aux_idx)
+    aux_in_data = torch.utils.data.Subset(aux_data_cor_orig, aux_idx)
 
     idx_cor = np.array(range(len(aux_data_cor_orig)))
     rng.shuffle(idx)
